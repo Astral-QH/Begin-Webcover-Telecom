@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hóa đơn bán hàng - Phần mềm dịch vụ viễn thông</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid main-page">
+        <div class="row">
+            <div class="col-lg-4 col-left">
+                <section class="info">
+                    <h1>
+                        Công ty TNHH DV Viễn Thông Trường Thọ
+                    </h1>
+                    <h1>
+                        Công ty TNHH DV Viễn Thông Thái Bình Dương
+                    </h1>
+
+                    <div class="dropdown mx-auto text-center">
+                        <button class="btn btn-success dropdown-toggle mb-2" type="button" data-bs-toggle="dropdown">
+                            Chọn loại hóa đơn
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hoa-don-ban-hang.html">Hóa đơn bán hàng</a></li>
+                            <li><a class="dropdown-item" href="hoa-don-thu-ho.html">Hóa đơn thu hộ</a></li>
+                            <li><a class="dropdown-item" href="hoa-don-chuyen-tien.html">Hóa đơn chuyển tiền</a></li>
+                            <li><a class="dropdown-item" href="hoa-don-nhan-tien.html">Hóa đơn nhận tiền</a></li>
+                        </ul>
+                    </div>
+
+                    <img src="assets/images/dich-vu-khach-hang.jpeg" alt="Logo" />
+
+                    <section class="contact-info">
+                        <p>
+                            <a target="_blank" href="https://goo.gl/maps/KXE6hi1UozYWtRhC9">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Số 220, Nguyễn Thị Minh Khai, P.Phú Hòa, TP. Thủ Dầu Một, Bình Dương
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:0909888999">
+                                <i class="fas fa-phone"></i>
+                                Số điện thoại: 0909 888 999
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:0907567567">
+                                <i class="fas fa-mobile"></i>
+                                Hotline: 0907 567 567
+                            </a>
+                        </p>
+                        <p>
+                            <i class="fas fa-user-circle"></i>
+                            Tư vấn viên: Nguyễn Thành Tài
+                        </p>
+                        <p>
+                            <a href="/">
+                                <i class="fas fa-globe"></i>
+                                www.demo.com
+                            </a>
+                        </p>
+                    </section>
+
+                    <section class="log-out">
+                        <div>
+                            <a type="button" class="btn btn-danger" href="dang-nhap.html">Thoát tài khoản</a>
+                        </div>
+                    </section>
+
+                </section>
+            </div>
+            <div class="col-lg-8 col-right">
+                <section class="hoa-don-ban-hang">
+                    <div class="heading">
+                        <h2>
+                            <i class="fal fa-rectangle-list"></i>
+                            Hóa đơn bán hàng
+                        </h2>
+                        <a href="#">
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+
+                    <!--Thông tin khách hàng + thông tin sản phẩm-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="customer-info">
+                                <a class="main-title" href="#">Thông tin khách mua hàng</a>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    <input class="form-control client-mobile" type="text" placeholder="Số điện thoại..." />
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    <input class="form-control client-name" type="text" placeholder="Họ tên..." />
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-location-dot"></i>
+                                    </span>
+                                    <input class="form-control client-address" type="text" placeholder="Địa chỉ..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-info">
+                                <a class="main-title" href="#">Thông tin sản phẩm</a>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </span>
+                                    <select class="form-select product-category">
+                                        <option value="">Chọn loại sản phẩm</option>
+                                        <option value="l1">Loại 1</option>
+                                        <option value="l2">Loại 2</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="fa-sharp fa-solid fa-barcode"></i>
+                                    </span>
+                                    <input class="form-control product-id" type="text" placeholder="Mã sản phẩm..." />
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-calculator"></i>
+                                            </span>
+                                            <input class="form-control product-quantity" type="text" placeholder="Số lượng.." />
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-dollar"></i>
+                                            </span>
+                                            <input class="form-control product-price" type="text" placeholder="Đơn giá..." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin thanh toán -->
+                    <div class="bill-info">
+                        <a class="main-title" href="#">Thông tin khách mua hàng</a>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </span>
+                            <input class="form-control money-number" type="text" placeholder="Số tiền thanh toán..." />
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-text-width"></i>
+                            </span>
+                            <input class="form-control money-text" type="text" placeholder="Số tiền bằng chữ..." />
+                        </div>
+                    </div>
+
+                    <!-- Trạng thái xử lý -->
+                    <div>
+                        <a class="main-title" href="#">Trạng thái xử lý</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="btn-group process-status">
+                                <a href="#" class="btn btn-sm btn-success active" aria-current="page">Chưa xử lý</a>
+                                <a href="#" class="btn btn-sm btn-light">Đã xử lý</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <a class="btn btn-sm btn-warning btn-print-hoa-don-ban-hang" href="#">
+                                <i class="fa-solid fa-print"></i>
+                                IN
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Table chi tiết -->
+                    <div class="table-box">
+                        <table class="table table-hover">
+                            <caption>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                                    <a href="#" class="btn btn-sm btn-primary">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-warning">
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </div>
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Thông tin khách</th>
+                                    <th>Thông tin sản phẩm</th>
+                                    <th>Số lượng đơn giá</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Đã xử lý</th>
+                                    <th>Tác vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>
+                                        <div>Lê Minh Hiếu</div>
+                                        <div>0979 876 678</div>
+                                        <div class="max-line-1">
+                                            Số 112, Nguyễn Thị Minh Khai, Phường Phú Hòa,
+                                            TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>Sim Viettel</div>
+                                        <div>0979 888 777</div>
+                                        <div>03/08/2023</div>
+                                    </td>
+                                    <td>
+                                        1 x 50,000
+                                    </td>
+                                    <td>
+                                        50,000
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-button">
+                                            <a href="#" class="btn btn-success btn-sm">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-sm">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>
+                                        <div>Lê Minh Hiếu</div>
+                                        <div>0979 876 678</div>
+                                        <div class="max-line-1">
+                                            Số 112, Nguyễn Thị Minh Khai, Phường Phú Hòa,
+                                            TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>Sim Viettel</div>
+                                        <div>0979 888 777</div>
+                                        <div>03/08/2023</div>
+                                    </td>
+                                    <td>
+                                        1 x 50,000
+                                    </td>
+                                    <td>
+                                        50,000
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success btn-sm">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>
+                                        <div>Lê Minh Hiếu</div>
+                                        <div>0979 876 678</div>
+                                        <div class="max-line-1">
+                                            Số 112, Nguyễn Thị Minh Khai, Phường Phú Hòa,
+                                            TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>Sim Viettel</div>
+                                        <div>0979 888 777</div>
+                                        <div>03/08/2023</div>
+                                    </td>
+                                    <td>
+                                        1 x 50,000
+                                    </td>
+                                    <td>
+                                        50,000
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success btn-sm">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>
+                                        <div>Lê Minh Hiếu</div>
+                                        <div>0979 876 678</div>
+                                        <div class="max-line-1">
+                                            Số 112, Nguyễn Thị Minh Khai, Phường Phú Hòa,
+                                            TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>Sim Viettel</div>
+                                        <div>0979 888 777</div>
+                                        <div>03/08/2023</div>
+                                    </td>
+                                    <td>
+                                        1 x 50,000
+                                    </td>
+                                    <td>
+                                        50,000
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success btn-sm">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>
+                                        <div>Lê Minh Hiếu</div>
+                                        <div>0979 876 678</div>
+                                        <div class="max-line-1">
+                                            Số 112, Nguyễn Thị Minh Khai, Phường Phú Hòa,
+                                            TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>Sim Viettel</div>
+                                        <div>0979 888 777</div>
+                                        <div>03/08/2023</div>
+                                    </td>
+                                    <td>
+                                        1 x 50,000
+                                    </td>
+                                    <td>
+                                        50,000
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success btn-sm">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-danger btn-sm">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="7">
+                                        <nav>
+                                            <ul class="pagination pagination-sm justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link">
+                                                        <i class="fa-solid fa-chevron-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/bootstrap.bundle.js"></script>
+    <script src="assets/scripts/jquery-3.7.0.min.js"></script>
+    <script src="assets/scripts/number-to-text.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

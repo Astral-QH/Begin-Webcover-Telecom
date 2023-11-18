@@ -1,0 +1,266 @@
+﻿/*#region basic */
+body {
+    background: #d6d6d6;
+}
+
+.max-line-1 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 360px;
+}
+
+.max-line-2 {
+    overflow: hidden;
+    max-width: 360px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/*#endregion */
+
+/*#region login-page + chung */
+
+.dang-nhap-page,
+.main-page {
+}
+
+    .dang-nhap-page .col-left,
+    .main-page .col-left {
+        background: #ffffff;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+        .dang-nhap-page .col-left .info,
+        .main-page .col-left .info {
+        }
+
+            .dang-nhap-page .col-left .info h1,
+            .main-page .col-left .info h1 {
+                font-size: 16px;
+                text-align: center;
+                color: #3053bb;
+                text-shadow: 1px 1px #ffd800;
+                text-transform: uppercase;
+                margin: .5rem 0;
+            }
+
+            .dang-nhap-page .col-left .info img,
+            .main-page .col-left .info img {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 80%;
+                display: block;
+                margin: auto;
+            }
+
+            .dang-nhap-page .col-left .info a,
+            .main-page .col-left .info a {
+                display: block;
+                text-align: center;
+            }
+
+        .main-page .col-left .contact-info {
+            text-align: center;
+            color: #3053bb;
+            margin-top: 2rem;
+        }
+
+            .main-page .col-left .contact-info a {
+                text-decoration: none;
+                color: #3053bb;
+            }
+
+            .main-page .col-left .contact-info p {
+                margin-bottom: 5px;
+            }
+
+        .main-page .col-left .log-out {
+            margin: 2rem 150px;
+        }
+
+            .main-page .col-left .log-out a {
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+            }
+
+    .dang-nhap-page .col-right,
+    .main-page .col-right {
+        background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .dang-nhap-page .col-right .login-form {
+            text-align: center;
+        }
+
+            .dang-nhap-page .col-right .login-form h1 {
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .dang-nhap-page .col-right .login-form a {
+                color: #fff;
+                width: 300px;
+            }
+
+            .dang-nhap-page .col-right .login-form input:focus,
+            .dang-nhap-page .col-right .login-form select:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+    /*#endregion */
+
+    /*#region col-right */
+
+    .main-page .col-right {
+    }
+
+        /*#endregion */
+
+        /*#region menu-large */
+        .main-page .col-right .menu-large {
+        }
+
+            .main-page .col-right .menu-large a {
+                text-decoration: none;
+                display: block;
+                padding: .75rem 0;
+                margin: 1rem 0;
+                width: 100%;
+                aspect-ratio: 2/1;
+                background: #ffeb00;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                text-align: center;
+                border: 4px solid #5ab400;
+            }
+
+            .main-page .col-right .menu-large h3 {
+                color: #ff0000;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+
+            .main-page .col-right .menu-large a img {
+                width: 100%;
+                height: 100%;
+            }
+        /*#endregion */
+
+        /*#region hoa-don-ban-hang */
+        .main-page .col-right .hoa-don-ban-hang {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+            .main-page .col-right .hoa-don-ban-hang .heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .main-page .col-right .hoa-don-ban-hang .heading h2 {
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                }
+
+                .main-page .col-right .hoa-don-ban-hang .heading a {
+                    color: #3053bb;
+                    width: 25px;
+                    height: 25px;
+                    text-align: center;
+                    background-color: #fff200;
+                    border-radius: 4px;
+                    font-weight: bold;
+                }
+
+            .main-page .col-right .hoa-don-ban-hang .main-title {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 600;
+                border-bottom: 2px solid #fff;
+                margin-bottom: 1rem;
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                padding-right: 0.5rem;
+            }
+
+            .main-page .col-right .hoa-don-ban-hang .customer-info {
+            }
+
+            .main-page .col-right .hoa-don-ban-hang .product-info {
+            }
+
+            .main-page .col-right .hoa-don-ban-hang .table-box {
+                margin-top: 2rem;
+                margin-bottom: .5rem;
+                border-radius: 5px;
+                background-color: #fff;
+                overflow: hidden;
+            }
+
+                .main-page .col-right .hoa-don-ban-hang .table-box table {
+                    border-radius: 5px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table thead tr th {
+                        background-color: #ffeb00;
+                        vertical-align: middle;
+                    }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table tbody tr:nth-child(odd) {
+                        vertical-align: middle;
+                        background-color: #fff;
+                    }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table tbody tr:nth-child(even) {
+                        vertical-align: middle;
+                        background-color: #f1ffbe;
+                    }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table tbody tr td {
+                        vertical-align: middle;
+                        background-color: transparent !important;
+                    }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table caption {
+                        caption-side: top;
+                        padding: .5rem;
+                    }
+
+                        .main-page .col-right .hoa-don-ban-hang .table-box table caption .btn {
+                            height: 30px;
+                            color: #fff;
+                        }
+
+                        .main-page .col-right .hoa-don-ban-hang .table-box table caption input {
+                            height: 30px;
+                        }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table tfoot td {
+                        border: none;
+                    }
+
+                        .main-page .col-right .hoa-don-ban-hang .table-box table tfoot td ul {
+                            margin: 0;
+                        }
+
+                    .main-page .col-right .hoa-don-ban-hang .table-box table .action-button {
+                        white-space: nowrap;
+                    }
+/*#endregion */
+

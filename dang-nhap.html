@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập hệ thống - Phần mềm dịch vụ viễn thông</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid dang-nhap-page">
+        <div class="row">
+            <div class="col-4 col-left">
+                <section class="info">
+                    <h1>
+                        Công ty TNHH DV Viễn Thông Trường Thọ
+                    </h1>
+                    <img src="assets/images/dich-vu-khach-hang.jpeg" alt="Logo" />
+                    <h1>
+                        Công ty TNHH DV Viễn Thông Thái Bình Dương
+                    </h1>
+                    <a href="www.demo.com">
+                        <i class="fas fa-globe"></i>
+                        www.demo.com
+                    </a>
+                </section>
+            </div>
+            <div class="col-8 col-right">
+                <form class="login-form">
+                    <h1>
+                        <i class="fas fa-user-circle"></i>
+                        Đăng nhập
+                    </h1>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <select id="select-chi-nhanh" class="form-select">
+                            <option value="">Chọn 1 chi nhánh</option>
+                            <option value="truongtho">Chi nhánh Trường Thọ</option>
+                            <option value="thaibinhduong">Chi nhánh Thái Bình Dương</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-key"></i>
+                        </span>
+                        <input id="input-password" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <a id="button-login" class="btn btn-danger mt-2 mb-2" href="#">
+                        Đăng nhập hệ thống
+                    </a>
+
+                    <div class="text-white text-center mb-2" id="waiting-times"></div>
+
+                    <div id="alert-message-success" class="alert alert-success d-flex alert-dismissible d-none" role="alert">
+                        <i class="fa-solid fa-shield-check text-success"></i>
+                        <div class="ms-2">
+                            Đăng nhập thành công
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                    <div id="alert-message-error" class="alert alert-danger d-flex alert-dismissible d-none" role="alert">
+                        <i class="fa-solid fa-circle-xmark text-danger"></i>
+                        <div class="ms-2">
+                            Tài khoản không hợp lệ
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/bootstrap.bundle.js"></script>
+    <script src="assets/scripts/jquery-3.7.0.min.js"></script>
+    <script src="assets/scripts/number-to-text.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
